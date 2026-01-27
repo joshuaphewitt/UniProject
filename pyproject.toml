@@ -1,11 +1,11 @@
 [project]
-name = "placeholder_project_name"
+name = "UniProject"
 version = "0.0.1"
-description = "Your project description here"
+description = "University project"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Your Name", email = "you@example.com" }]
+authors = [{ name = "Joshua Hewitt", email = "joshhewitt11@live.co.uk" }]
 dependencies = [
   # dependencies go here
 ]
