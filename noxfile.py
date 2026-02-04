@@ -168,6 +168,19 @@ def tests(session):
     session.notify("isort_check")
     session.notify("pytest")
 
+@nox.session(python=PYTHON_VERSION)
+def precommit(session):
+    """
+    Equivalent of:
+      make precommit
+    """
+
+    session.notify("ruff_check")
+    session.notify("black_check")
+    session.notify("mypy_check")
+    session.notify("tomlsort_check")
+    session.notify("isort_check")
+
 
 @nox.session(python=PYTHON_VERSION)
 def pytest(session):
