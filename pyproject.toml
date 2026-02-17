@@ -8,6 +8,9 @@ license = { file = "LICENSE" }
 authors = [{ name = "Joshua Hewitt", email = "joshhewitt11@live.co.uk" }]
 dependencies = [
   # dependencies go here
+  "flask",
+  "requests",
+  "werkzeug",
 ]
 
 [dependency-groups]
@@ -60,5 +63,3 @@ exclude = [
   "README.md",
   # add other files or directories to exclude from linting here
 ]
-
-
