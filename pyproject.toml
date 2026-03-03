@@ -9,7 +9,10 @@ authors = [{ name = "Joshua Hewitt", email = "joshhewitt11@live.co.uk" }]
 dependencies = [
   # dependencies go here
   "flask",
+  "paramiko",
   "requests",
+  "types-paramiko",
+  "types-requests",
   "werkzeug",
 ]
 

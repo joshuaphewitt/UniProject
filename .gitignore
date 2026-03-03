@@ -15,3 +15,6 @@ __pycache__/
 # Distribution / packaging
 *egg-info/
 
+# Database files
+.DS_Store
+users.db
