@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UniProject{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="title">Track</div>
+        <div class="profile-wrapper">
+            <div class="profile">
+                <div class="profile-icon"></div>
+                <div class="profile-info">
+                    <div class="profile-name">{{ name }}</div>
+                    <div class="profile-business">{{ companyName }}</div>
+                </div>
+                <span class="material-icons">expand_more</span>
+            </div>
+            <div class="profile-dropdown">
+                <a href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="{{ url_for('track') }}" class="bottom-nav-item">Track</a>
+        <a href="{{ url_for('process') }}" class="bottom-nav-item">Process</a>
+        <a href="{{ url_for('report') }}" class="bottom-nav-item">Report</a>
+    </nav>
+
+</body>
+</html>
