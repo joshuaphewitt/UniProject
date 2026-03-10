@@ -11,10 +11,3 @@ def test_api_call():
         print("Test FAILED! API returned an error.")
     else:
         print("Test PASSED! API call succeeded.")
-
-
-def test_placeholder():
-    assert True
-
-
-# This is a placeholder test file. Replace with actual tests.
